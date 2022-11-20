@@ -1,0 +1,11 @@
+<div>
+  <label *ngIf="config.label" [for]="config.controlName">
+    {{ config.label }}
+  </label>
+  <input
+    [formControl]="control"
+    [id]="config.controlName"
+    type="text"
+    class="default-control"
+  />
+</div>

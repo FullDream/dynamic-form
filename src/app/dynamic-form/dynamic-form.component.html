@@ -1,0 +1,8 @@
+<form [formGroup]="form">
+  <ng-container
+    *ngFor="let item of controls"
+    appRenderElements
+    [form]="form"
+    [config]="item"
+  ></ng-container>
+</form>
