@@ -1,6 +1,14 @@
+:root {
+  --bg-color: #fff;
+  --control-border-color: #c3c3c3;
+  --primary-color: #ffe783;
+  --control-border: 1px solid var(--control-border-color);
+  --border-radius-default: 3px;
+}
+
 .default-control {
-  border: 1px solid #c3c3c3;
-  border-radius: 3px;
+  border: var(--control-border);
+  border-radius: var(--border-radius-default);
   padding: 12px 15px 8px 15px;
   font-family: "PT Sans";
 

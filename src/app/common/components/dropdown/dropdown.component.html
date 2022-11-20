@@ -1,0 +1,35 @@
+<span class="wrapper">
+  <input
+    type="text"
+    class="default-control input-dropdown"
+    readonly
+    [placeholder]="placeholder"
+    (click)="isOpen = !isOpen"
+    [value]="value"
+  />
+
+  <svg
+    class="arrow"
+    [class.arrow_reverse]="isOpen"
+    width="16"
+    height="9"
+    viewBox="0 0 16 9"
+    fill="none"
+  >
+    <path
+      d="M15.1421 1.07107L8.07104 8.14214L0.999977 1.07107"
+      stroke="black"
+    />
+  </svg>
+
+  <ul @enterLeave *ngIf="isOpen" class="options">
+    <li
+      *ngFor="let item of options"
+      (click)="onSelect(item)"
+      class="item"
+      [ngClass]="{ item_active: value === item }"
+    >
+      {{ item }}
+    </li>
+  </ul>
+</span>

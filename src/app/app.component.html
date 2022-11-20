@@ -1,3 +1,5 @@
 <app-dynamic-form [controls]="controls"></app-dynamic-form>
-<app-input-number [(ngModel)]="value"></app-input-number>
-{{ value }}
+<app-dropdown
+  [(ngModel)]="value"
+  [options]="['a', 'saas', 'sasa']"
+></app-dropdown>
