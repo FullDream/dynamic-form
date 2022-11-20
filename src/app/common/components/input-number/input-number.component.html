@@ -1,0 +1,20 @@
+<span class="wrapper">
+  <input
+    [disabled]="disabled"
+    class="default-control input-number"
+    [(ngModel)]="value"
+    type="number"
+  />
+  <span class="buttons">
+    <button
+      [disabled]="disabled || readonly"
+      class="btn"
+      (click)="onValueUp()"
+    ></button>
+    <button
+      [disabled]="disabled || readonly"
+      class="btn btn_down"
+      (click)="onValueDown()"
+    ></button>
+  </span>
+</span>

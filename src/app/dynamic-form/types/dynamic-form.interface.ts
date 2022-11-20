@@ -1,11 +1,9 @@
-export const enum FormComponents {
-  input = 'input',
-}
-
-type FormComponentsUnion = `${FormComponents}`;
+import { ValidatorFn } from '@angular/forms';
+import { FormComponentsUnion } from './form-components.types';
 
 export interface BaseControl {
   component: FormComponentsUnion;
-  label?: string;
   controlName: string;
+  label?: string;
+  validators?: ValidatorFn[];
 }

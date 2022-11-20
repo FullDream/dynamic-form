@@ -25,7 +25,7 @@ export class DynamicFormComponent implements OnInit {
     return group;
   }
 
-  createControl(config: BaseControl) {
-    return this.fb.control(null);
+  createControl({ validators }: BaseControl) {
+    return this.fb.control(null, validators);
   }
 }
