@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { DropdownComponent } from './common/components/dropdown';
 import { InputNumberComponent } from './common/components/input-number';
 import { DynamicFormModule } from './dynamic-form/dynamic-form.module';
+import { CheckboxComponent } from './common/components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { DynamicFormModule } from './dynamic-form/dynamic-form.module';
     BrowserAnimationsModule,
     FormsModule,
     DropdownComponent,
+    CheckboxComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

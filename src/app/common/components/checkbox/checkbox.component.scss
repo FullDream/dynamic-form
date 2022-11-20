@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox {
+  appearance: none;
+  cursor: pointer;
+
+  width: 22px;
+  height: 22px;
+  border: var(--control-border);
+  border-radius: var(--border-radius-default);
+  transition: 0.3s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 5%;
+
+  &:checked {
+    background-size: 13px;
+    background-color: var(--primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 13 13' fill='none'%3E%3Cpath d='M1 4L6 11L12 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
+  }
+}

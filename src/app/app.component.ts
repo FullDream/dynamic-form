@@ -9,7 +9,7 @@ import { BaseControl } from './dynamic-form/types/dynamic-form.interface';
 export class AppComponent {
   title = 'dynamic-form';
   value!: any;
-
+  check!: boolean;
   controls: BaseControl[] = [
     {
       controlName: 'name',
